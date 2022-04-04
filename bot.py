@@ -17,7 +17,7 @@ server = Flask(__name__)
 @bot.message_handler(commands={"start"})
 def start(message):
 	cid = message.chat.id
-	bot.send_message(cid,"Hola!\nEste bot te permitirá comprobar el estado de tus listas mediante la API de Xtream Codes.\nPara comprobar tu lista tan solo tienes que enviarme el enlace y yo te mostraré toda la información\n\nBot desarrollado por @APLEONI\nhttps://github.com/adrianpaniagualeon/iptv-checker")
+	bot.send_message(cid,"Hola! En Este bot te permitirá comprobar el estado de tus listas. BOT BY @yhvga")
 
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
